@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - GameTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Game<span>Tech</span></a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="products.html" class="nav-link">Товары</a>
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="contact.html" class="nav-link active">Контакты</a>
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <h1>СВЯЖИТЕСЬ С <span>НАМИ</span></h1>
+            <p>Мы всегда рады помочь и ответить на ваши вопросы</p>
+        </div>
+    </section>
+
+    <!-- Контактная информация и форма -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>КОНТАКТНАЯ <span>ИНФОРМАЦИЯ</span></h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h3>Адрес</h3>
+                                <p>Москва, ул. Геймерская, 15</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h3>Телефон</h3>
+                                <p>+7 (951) 074-24-72</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p><samohvalovkirill097 class="com"></samohvalovkirill097></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-text">
+                                <h3>Время работы</h3>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                                <p>Сб-Вс: 10:00 - 16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-contact">
+                        <h3>Мы в социальных сетях</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">VK</a>
+                            <a href="#" class="social-link">Telegram</a>
+                            <a href="#" class="social-link">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>ОСТАВЬТЕ <span>СООБЩЕНИЕ</span></h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <select id="subject" name="subject">
+                                <option value="general">Общий вопрос</option>
+                                <option value="product">Вопрос о продукте</option>
+                                <option value="support">Техническая поддержка</option>
+                                <option value="warranty">Гарантия</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">КАК <span>НАС НАЙТИ</span></h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <p>📍 Москва, ул. Геймерская, 15</p>
+                    <p>Карта будет загружена здесь</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">ЧАСТО ЗАДАВАЕМЫЕ <span>ВОПРОСЫ</span></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какой срок доставки?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Доставка по Москве осуществляется в течение 1-2 рабочих дней. В другие регионы России - 3-7 рабочих дней в зависимости от удаленности.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли гарантия на продукты?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, на все продукты GameTech предоставляется гарантия от 1 до 2 лет в зависимости от категории товара.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли вернуть товар?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, в соответствии с законодательством РФ, вы можете вернуть товар в течение 14 дней с момента покупки, если он не был в употреблении и сохранен товарный вид.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GameTech</h3>
+                    <p>Лучшие игровые девайсы для настоящих геймеров. Качество, производительность и стиль.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Меню</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>📞 +7 (951) 074-24-72</li>
+                        <li>✉️ samohvalovkirill097.com</li>
+                        <li>📍 Москва, ул. Геймерская, 15</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameTech. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Корзина -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Ваша корзина</h3>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Товары будут добавляться сюда -->
+        </div>
+        <div class="cart-total">
+            <p>Итого: <span id="cartTotal">0</span> ₽</p>
+            <button class="btn btn-primary checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
